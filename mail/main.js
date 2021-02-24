@@ -1,0 +1,17 @@
+bg = new Array(14); 
+bg[0] = './images/bg00.jpg' 
+bg[1] = './images/bg01.jpg' 
+bg[2] = './images/bg02.jpg' 
+bg[3] = './images/bg03.jpg' 
+bg[4] = './images/bg04.jpg' 
+bg[5] = './images/bg05.jpg' 
+bg[6] = './images/bg06.jpg' 
+bg[7] = './images/bg07.jpg' 
+bg[8] = './images/bg08.jpg' 
+bg[9] = './images/bg09.jpg' 
+bg[10] = './images/bg10.jpg' 
+bg[11] = './images/bg11.jpg' 
+bg[12] = './images/bg12.jpg' 
+bg[13] = './images/bg13.jpg' 
+index = Math.floor(Math.random() * bg.length);
+document.write("<img src="+bg[index]+">");

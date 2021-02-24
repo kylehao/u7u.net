@@ -1,0 +1,129 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>狙击野鸭HTML5版</title>
+    <!-- TODO: Create favion.ico-->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="build/libs.min.js"></script>
+<script src="build/duckhunt.min.js"></script>
+<script src="main.js"></script>
+<style>
+</style>
+</head>
+<body>
+
+<div id="gameField" class="gameField">
+
+
+<div id="game" class="game">
+    <div id="theFlash" class="theFlash"></div>
+    <div id="tree" class="tree"></div>
+    <div id="grass" class="grass"></div>
+</div>
+<div class="gameinfo ammo" id="ammo"></div>
+<div class="gameinfo waves" id="waves"></div>
+<div class="gameinfo duckBoard" id="duckBoard"></div>
+<div class="gameinfo scoreboard" id="scoreboard"></div>
+
+<div id="loser" class="messages loser">
+Are you kidding me with that?
+<br/><br/>
+<div class="tryAgain">Try Again</div>
+</div>
+
+
+<div id="winner" class="messages winner">
+You are a champion!  
+</div>
+
+
+<div id="level" class="messages level">
+Level 1
+</div>
+
+</div>
+
+<div id="levelCreate" class="levelCreator"><br/>
+<strong>Level Creator:</strong><br/>
+Waves: <input id="LCwaves" name="LCwaves" size="3" type="text" value="1"/> &nbsp; &nbsp; Starting Ducks: <input name="LCducks" id="LCducks" size="3" type="text" value="2"/> &nbsp; &nbsp; Starting Bullets: <input type="text" name="LCbullets" id="LCbullets" size="3" value="4"/> &nbsp; &nbsp; Wave Time (sec): <input type="text" name="LCwavetime" id="LCwavetime" size="3" value="10"/> &nbsp; &nbsp; Difficulty: <input type="text" name="LCdif" id="LCdif" size="3" value="5"/>
+<div id="doit" class="doit">Bring It On</div>
+<br/><br/>
+<small>It's probably worth mentioning that it's very possible to crash your browser if you're overzealous with the level creator.  Wave time is the amount of time before the ducks fly away.  Difficulty is rated from 1-10 and controls the speed of the ducks.  Anything over 8 is kind of ridiculous. The bullet and duck counters have a maximum size- you will receive everything you configure but they may not all display if the number of bullets or ducks is too high.</small>
+<br>
+<center>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254552736'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1254552736%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+	<br>
+<script type="text/javascript"><!--
+google_ad_client = "pub-8742386847853865";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+//--></script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</center>
+</div>
+
+<div id="info"></div>
+
+<audio class="sounds" id="gunSound" preload="auto">
+    <source type="audio/ogg" src="sounds/gunSound.ogg"/>
+    <source type="audio/mp3" src="sounds/gunSound.mp3"/>
+</audio>
+
+<audio class="sounds" id="gunSound2" preload="auto">
+    <source type="audio/ogg" src="sounds/gunSound2.ogg"/>
+    <source type="audio/mp3" src="sounds/gunSound2.mp3"/>
+</audio>
+
+<audio class="sounds" id="laugh" preload="auto">
+    <source type="audio/ogg" src="sounds/laugh.ogg"/>
+    <source type="audio/mp3" src="sounds/laugh.mp3"/>
+</audio>
+
+<audio class="sounds" id="quak" preload="auto">
+    <source type="audio/ogg" src="sounds/quak.ogg"/>
+    <source type="audio/mp3" src="sounds/quak.mp3"/>
+</audio>
+
+<audio class="sounds" id="thud" preload="auto">
+    <source type="audio/ogg" src="sounds/thud.ogg"/>
+    <source type="audio/mp3" src="sounds/thud.mp3"/>
+</audio>
+
+<audio class="sounds" id="ohyeah" preload="auto">
+    <source type="audio/ogg" src="sounds/ohYeah.ogg"/>
+    <source type="audio/mp3" src="sounds/ohYeah.mp3"/>
+</audio>
+
+<audio class="sounds" id="quacking" loop="loop">
+    <source type="audio/ogg" src="sounds/quacking.ogg"/>
+    <source type="audio/mp3" src="sounds/quacking.mp3"/>
+</audio>
+
+<audio class="sounds" id="sniff" preload="auto">
+    <source type="audio/ogg" src="sounds/sniff.ogg"/>
+    <source type="audio/mp3" src="sounds/sniff.mp3"/>
+</audio>
+
+<audio class="sounds" id="bark" preload="auto">
+    <source type="audio/ogg" src="sounds/barkDucks.ogg"/>
+    <source type="audio/mp3" src="sounds/barkDucks.mp3"/>
+</audio>
+
+<audio class="sounds" id="victory" preload="auto">
+    <source type="audio/ogg" src="sounds/champ.ogg"/>
+    <source type="audio/mp3" src="sounds/champ.mp3"/>
+</audio>
+
+<audio class="sounds" id="defeat" preload="auto">
+    <source type="audio/ogg" src="sounds/loserSound.ogg"/>
+    <source type="audio/mp3" src="sounds/loserSound.mp3"/>
+</audio>
+
+</body>
+</html>
