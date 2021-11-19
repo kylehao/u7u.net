@@ -1,372 +1,63 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>听松阁桌面</title>
-<link type="text/css" rel="stylesheet" href="images/main.css">
-<!--[if IE 6]>
-<link rel="stylesheet" type="text/css" href="images/ie6.css" />
-<![endif]-->
-<script src="images/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="images/lightbox.min.js"></script>
-<style type="text/css">
-.wrapper{ margin:0px auto; padding:20px; border:1px solid #CCC; background:#333; width:980px; font-size:12px;}
-</style>
-<link rel="shortcut icon" type="image/x-icon" href="img/an.ico"/>
-		<style type="text/css">
-			/*样式初始化*/
-			* {
-				margin: 0;
-				padding: 0;
-				list-style: none;
-			}
-			/*去除横向滚动条*/
-			body {
-				overflow-x: hidden;
-				overflow-y: hidden;
-				background-color: 000;
-				font-size:13px;
-				color: #ffffff;
-			}
-			/*将div铺满整个窗口*/
-			.box {
-				height: 100vh;
-				min-height: 520px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
-background-color: 000;
-			}
-			/*设置大ul的大小及定位*/
-			.content {
-				position: relative;
-				width: 100%;
-				height: 100%;
-background-color: 000;
-			}
-			/*设置大li样式*/
-			.content li {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-			}
-			/*将第一张图片后的图片隐藏*/
-			#li1~li{display: none;}
-			/*设置大li背景图片*/
-			#li1 {background-image: url(img/bg01.jpg);}
-			#li2 {background-image: url(img/bg02.jpg);}
-			#li3 {background-image: url(img/bg03.jpg);}
-			#li4 {background-image: url(img/bg04.jpg);}
-			#li5 {background-image: url(img/bg05.jpg);}
-			#li6 {background-image: url(img/bg06.jpg);}
-			#li7 {background-image: url(img/bg07.jpg);}
-			#li8 {background-image: url(img/bg08.jpg);}
-			#li9 {background-image: url(img/bg09.jpg);}
-			/*点击a标签,切换大图片*/
-			#li1:target,
-			#li2:target,
-			#li3:target,
-			#li4:target,
-			#li5:target,
-			#li6:target,
-			#li7:target,
-			#li8:target,
-			#li9:target{
-				display: block;
-			}
-			
-			
-		
-		</style>
+﻿<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
+<title>听松阁</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1020">
+	<meta name="description" content="听松阁">
+	<meta name="keywords" content="听松阁">
+	<meta property="og:title" content="听松阁">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://www.free163.com/">
+	<meta property="og:image" content="#">
+	<meta property="og:site_name" content="听松阁">
+	<meta property="og:description" content="听松阁">
+	<link href="./images/common.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./images/normalize.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./images/style.css" rel="stylesheet" type="text/css" media="all">
+
+
+</script><script src="./images/jquery-1.9.0.min.js">
+</script><script src="./images/common.js"></script>
+<script src="./images/script.js"></script>
+	<script type="text/javascript" src="./images/jquery.bgswitcher.js"></script>
+	<script>
+	$("document").ready(function(){
+	$("header").bgswitcher({
+  	images: ["https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/main01.jpg","https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/main02.jpg","https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/main03.jpg"],
+  	effect: "fade",
+  	duration: 2000
+	});
+	});
+	</script>
+<script data-ad-client="ca-pub-8742386847853865" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <noscript></head></noscript>
 
-	<body bgcolor="#000000" Scroll=no>
-		<div class="box">
-			<ul class="content">
-				<li id="li1"></li>
-				<li id="li2"></li>
-				<li id="li3"></li>
-				<li id="li4"></li>
-				<li id="li5"></li>
-				<li id="li6"></li>
-				<li id="li7"></li>
-				<li id="li8"></li>
-				<li id="li9"></li>
-			</ul>
-		</div>
+<body style="zoom: 1;" >
 
-<!-- 代码 开始 -->
-<div class="fish" style="position:absolute; width:1350px; height:500px; z-index:1; left: 20px; top: 10px;backgroud-color:000;">
-<table>
-	
-	<!-- 第1行 -->
-    <tr>
-     <td align="center" width="60"><a href="http://cloud.444.info/?lightbox[iframe]=true&lightbox[width]=850&lightbox[height]=540" class="lightbox"><img name="folder" src="computer/folder.gif" width="50" height="50" border="0" id="index_r2_c2" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://photo.444.info/?lightbox[iframe]=true&lightbox[width]=850&lightbox[height]=540" class="lightbox"><img name="pictures" src="computer/pictures.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://vip.444.info/?lightbox[iframe]=true&lightbox[width]=850&lightbox[height]=300" class="lightbox"><img name="vip" src="computer/vip.gif" width="50" height="50" border="0" id="index_r2_c6" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://kylehao.ys168.com/" target="_blank"><img name="share" src="computer/share.gif" width="50" height="50" border="0" id="index_r5_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.mp4.run/dlj/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="pictures" src="computer/dlj.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://free.444.info/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="free" src="computer/free.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td></td>
-    </tr>
-    <tr>
-     <td align="center" width="60">我的文档</td>
-     <td width="20"></td>
-     <td align="center" width="60">我的相册</td>
-     <td width="20"></td>
-     <td align="center" width="60">视频解析</td>
-     <td width="20"></td>
-     <td align="center" width="60">文件分享</td>
-     <td width="20"></td>
-     <td align="center" width="60">邓丽君</td>
-     <td width="20"></td>
-     <td align="center" width="60">免费空间</td>
-     <td width="20"></td>
-     <td align="center"></td>
-    </tr>
-    <tr>
-     <td>&nbsp;</td>
-    </tr>
-    
-<!-- 第2行 -->   
-    <tr>
-     <td align="center" width="60"><a href="https://cloud.of.gs/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="computer" src="computer/computer.gif" width="50" height="50" border="0" id="index_r5_c2" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://movie.444.info/" target="_blank"><img name="movie" src="computer/movie.gif" width="50" height="50" border="0" id="index_r5_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.free163.com/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="poem" src="computer/poem.gif" width="50" height="50" border="0" id="index_r5_c6" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.mp4.run/dys/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="dys" src="computer/dys.gif" width="50" height="50" border="0" id="index_r5_c6" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.mp4.run/wmcyy/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="pictures" src="computer/wmcyy.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td width="60"></td>
-     <td width="20"></td>
-     <td width="60"></td>
-    </tr>
-    <tr>
-     <td align="center" width="60">我的电脑</td>
-     <td width="20"></td>
-     <td align="center" width="60">我的电影</td>
-     <td width="20"></td>
-     <td align="center" width="60">古典诗词</td>
-     <td width="20"></td>
-     <td align="center" width="60">德云社</td>
-     <td width="20"></td>
-     <td align="center" width="60">唯美音乐</td>
-     <td width="20"></td>
-     <td align="center"></td>
-     <td width="20"></td>
-     <td align="center"></td>
-    </tr>
-    <tr>
-     <td>&nbsp;</td>
-    </tr>
-    
-<!-- 第3行 -->
-    <tr>
-     <td align="center" width="60"><a href="https://git.asia.ga/?lightbox[iframe]=true&lightbox[width]=850&lightbox[height]=540" class="lightbox"><img name="network" src="computer/network.gif" width="50" height="50" border="0" id="index_r8_c2" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://book.444.info/" target="_blank"><img name="book" src="computer/book.gif" width="50" height="50" border="0" id="index_r8_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.book.ga/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="wuxia" src="computer/wuxia.gif" width="50" height="50" border="0" id="index_r8_c6" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.mp4.run/qyy/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="qyy" src="computer/qyy.gif" width="50" height="50" border="0" id="index_r8_c6" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.mp4.run/zyxyy/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="pictures" src="computer/zyxyy.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
-     <td></td>
-     <td width="20"></td>
-     <td></td>
-    </tr>
-    <tr>
-     <td align="center" width="60">我的网络</td>
-     <td width="20"></td>
-     <td align="center" width="60">我的图书</td>
-     <td width="20"></td>
-     <td align="center" width="60">武侠小说</td>
-     <td width="20"></td>
-     <td align="center" width="60">轻音乐</td>
-     <td width="20"></td>
-     <td align="center" width="60">治愈音乐</td>
-     <td width="20"></td>
-     <td align="center"></td>
-     <td width="20"></td>
-     <td align="center"></td>
-    </tr>
-    <tr>
-     <td>&nbsp;</td>
-    </tr>
-    
-<!-- 第4行 -->
-    <tr>
-     <td align="center" align="center" width="60"><a href="https://of.gs/?lightbox[iframe]=true&lightbox[width]=850&lightbox[height]=300" class="lightbox"><img name="index_r11_c2" src="computer/ie.gif" width="50" height="50" border="0" id="index_r11_c2" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://blog.444.info/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="blog" src="computer/blog.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://my.64.gs:87/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="free" src="computer/189.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.mp4.run/lx/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="lxyy" src="computer/lxyy.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.mp4.run/zrzs/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="pictures" src="computer/zrzs.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td></td>
-     <td width="20"></td>
-    <td></td>
-    </tr>
-   <tr>
-    <td align="center" width="60">短网址</td>
-    <td width="20"></td>
-    <td align="center" width="60">我的博客</td>
-    <td width="20"></td>
-    <td align="center" width="60">天翼云盘</td>
-    <td width="20"></td>
-    <td align="center" width="60">流行音乐</td>
-    <td width="20"></td>
-    <td align="center" width="60">自然之声</td>
-    <td width="20"></td>
-    <td align="center"></td>
-    <td width="20"></td>
-    <td align="center"></td>
-   </tr>
-   <tr>
-    <td >&nbsp;</td>
-   </tr>
-<!-- 第5行 -->
-    <tr>
-     <td align="center" width="60"><a href="http://teambition.444.info/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="index_r11_c2" src="computer/ljt.gif" width="50" height="50" border="0" id="index_r11_c2" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://mail.444.info/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="mail" src="computer/mail.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://aliyun.444.info/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="aliyun" src="computer/aliyun.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://game.444.info/?lightbox[iframe]=true&lightbox[width]=1000&lightbox[height]=500" class="lightbox"><img name="game" src="computer/game.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.mp4.run/korea/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="pictures" src="computer/korea.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td></td>
-     <td width="20"></td>
-    <td></td>
-    </tr>
-   <tr>
-    <td align="center" width="60">回收站</td>
-    <td width="20"></td>
-    <td align="center" width="60">我的邮局</td>
-    <td width="20"></td>
-    <td align="center" width="60">阿里云盘</td>
-    <td width="20"></td>
-    <td align="center" width="60">我的游戏</td>
-    <td width="20"></td>
-    <td align="center" width="60">韩国音乐</td>
-    <td width="20"></td>
-    <td align="center"></td>
-    <td width="20"></td>
-    <td align="center"></td>
-   </tr>
-   <tr>
-    <td >&nbsp;</td>
-   </tr>
-<!-- 第6行 -->
-    <tr>
-     <td align="center" width="60"><a href="http://www.mp4.run/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=550" class="lightbox"><img name="music" src="computer/music.gif" width="50" height="50" border="0" id="index_r11_c2" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.091.ltd/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="down" src="computer/down.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://yun.444.info/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="teambition" src="computer/teambition.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.mp4.run/japan/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="free" src="computer/japan.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td align="center" width="60"><a href="http://www.mp4.run/usa/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img name="pictures" src="computer/usa.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
-     <td width="20"></td>
-     <td></td>
-     <td width="20"></td>
-    <td></td>
-    </tr>
-   <tr>
-    <td align="center" width="60">我的音乐</td>
-    <td width="20"></td>
-    <td align="center" width="60">软件下载</td>
-    <td width="20"></td>
-    <td align="center" width="60">Teambition</td>
-    <td width="20"></td>
-    <td align="center" width="60">日本音乐</td>
-    <td width="20"></td>
-    <td align="center" width="60">欧美音乐</td>
-    <td width="20"></td>
-    <td align="center"></td>
-    <td width="20"></td>
-    <td align="center"></td>
-   </tr>
-   <tr>
-    <td >&nbsp;</td>
-   </tr>
-  </table>
+<header style=" background-color:#ffffff; " >
+<div class="wh1"><img src="./images/bg_header_wh.png">
+	</div>
+
+<div id="head_inner" >
+	<a href="#" class="tel" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/btn_tel.png" alt="个人介绍"></a><br>
+	<a href="#" class="acs" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/btn_acs.png" alt="我的相册"></a><br>
+	<a href="#" class="store" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/btn_store.png" alt="我的博客"></a><br>
+	<h1><a href="../"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/logo.png" alt="听松阁" class="logo"></a></h1>
+	<nav id="globalnav" style="margin-top:390px;">
+		<ul>
+			<li class="nav01"><a href="./lx/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v3.0/images/btn1.jpg" alt="流行音乐"></a></li>
+			<li class="nav02"><a href="./qyy/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v3.0/images/btn2.jpg" alt="轻音乐"></a></li>
+			<li class="nav03"><a href="./dys/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v3.0/images/btn3.jpg" alt="德云社"></a></li>
+		        <li class="nav04"><a href="./gl/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v3.0/images/btn4.jpg" alt="郭论"></a></li>
+			<li class="nav05"><a href="./qd/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v3.0/images/btn5.jpg" alt="谦道"></a></li>
+			<li class="nav06"><a href="./bj/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v3.0/images/btn6.jpg" alt="百家讲坛"></a></li>
+		</ul>
+	</nav>
 </div>
 
 
-<!-- 动态图 -->
-<div class="fish" style="position:absolute; width:280px; height:175px; z-index:1; left: 539px; top: 50px;backgroud-color:000;">
-<img src="images/fish.gif" width="280" height="175" border="0" alt="">
-</div>
-<div class="fish" style="position:absolute; width:280px; height:175px; z-index:1; left: 839px; top: 248px;backgroud-color:000;">
-<img src="images/fish.gif" width="280" height="175" border="0" alt="">
-</div>
+</header>
 
-<!-- 底部和按钮 -->
-<div class="fish" style="position:absolute; width:1365; height:39; z-index:1; left: 0px; bottom: -3px;backgroud-color:000;">
-<img src="images/bottom.jpg" width="1366" height="39" border="0" alt="">
-
-</div>
-
-<div class="fish" style="position:absolute; width:50; height:50; z-index:1; left: 0px; bottom: -3px;backgroud-color:000;">
-<table>
-	<tr>
-		<td><a href="http://www.444.info/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img src="computer/space.gif" width="40" height="50" border="0" alt=""></a></td>
-		<td width="20">&nbsp;</td>
-		<td><a href="http://cloud.444.info/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img src="computer/space.gif" width="40" height="50" border="0" alt=""></a></td>
-		<td width="1050">&nbsp;</td>
-		<td><a href="http://wx.qq.com/?lightbox[iframe]=true&lightbox[width]=800&lightbox[height]=540" class="lightbox"><img src="computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
-		<td width="10">&nbsp;</td>
-		<td><a href="http://www.360.cn/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img src="computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
-		<td width="7">&nbsp;</td>
-		<td><a href="http://www.mp4.run/lx/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img src="computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
-		<td width="6">&nbsp;</td>
-		<td><a href="http://www.mp4.run/dys/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img src="computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
-		<td width="4">&nbsp;</td>
-		<td><a href="http://www.mp4.run/qyy/?lightbox[iframe]=true&lightbox[width]=1200&lightbox[height]=540" class="lightbox"><img src="computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
-		
-			
-	</tr>
-</table>
-</div>
-
-
-<div class="fish" style="position:absolute; width:300px; height:20; z-index:1; left: 0px; bottom: -3px;backgroud-color:000;">
-<ul class="conlist" style="position:absolute; width:310px; height:30px; z-index:1; left: 840px; bottom: 0px;backgroud-color:000;">
-				<a href="#li1" class="a1"><img src="img/btn01.jpg" width="30" height="12" border="0" alt=""></a>
-				<a href="#li2" class="a2"><img src="img/btn02.jpg" width="30" height="12" border="0" alt=""></a>
-				<a href="#li3" class="a3"><img src="img/btn03.jpg" width="30" height="12" border="0" alt=""></a>
-				<a href="#li4" class="a4"><img src="img/btn04.jpg" width="30" height="12" border="0" alt=""></a>
-				<a href="#li5" class="a5"><img src="img/btn05.jpg" width="30" height="12" border="0" alt=""></a>
-				<a href="#li6" class="a6"><img src="img/btn06.jpg" width="30" height="12" border="0" alt=""></a>
-				<a href="#li7" class="a7"><img src="img/btn07.jpg" width="30" height="12" border="0" alt=""></a>
-				<a href="#li8" class="a8"><img src="img/btn08.jpg" width="30" height="12" border="0" alt=""></a>
-				<a href="#li9" class="a9"><img src="img/btn09.jpg" width="30" height="12" border="0" alt=""></a>
-			</ul>
-</div>
-
-
-</div>
-<!-- 代码 结束 -->
-	</body>
-
-</html>
+</body></html>
