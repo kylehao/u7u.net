@@ -1,63 +1,456 @@
-﻿<html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-<title>听松阁</title>
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1020">
-	<meta name="description" content="听松阁">
-	<meta name="keywords" content="听松阁">
-	<meta property="og:title" content="听松阁">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.free163.com/">
-	<meta property="og:image" content="#">
-	<meta property="og:site_name" content="听松阁">
-	<meta property="og:description" content="听松阁">
-	<link href="./images/common.css" rel="stylesheet" type="text/css" media="all">
-    <link href="./images/normalize.css" rel="stylesheet" type="text/css" media="all">
-    <link href="./images/style.css" rel="stylesheet" type="text/css" media="all">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>网站导航 - 听松阁</title>
+    <link rel="apple-touch-icon-precomposed" href="logo.png" />
+    <meta name="msapplication-TileImage" content="logo.png" />
+    <link rel="shortcut icon" href="32.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="full-screen" content="yes">
+    <!--UC强制全屏-->
+    <meta name="browsermode" content="application">
+    <!--UC应用模式-->
+    <meta name="x5-fullscreen" content="true">
+    <!--QQ强制全屏-->
+    <meta name="x5-page-mode" content="app">
+    <!--QQ应用模式-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" id="font-awesome-css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css?ver=1.1422" type="text/css" media="all">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://at.alicdn.com/t/font_1230786_ewprpwrczvj.js"></script>
+    <script src="sou.js"></script>
+    <link rel='stylesheet' href='style.css'>
+</head>
 
+<body>
+    <!--视频头部背景-->
+    <div class="banner-video">
+        <!--视频来自阿里云首页，有需要请自行更换-->
+        <!--video autoplay loop muted>
+            <source src="https://cdn.jsdelivr.net/gh/5iux/uploads/pic/3840-banner.mp4" type="video/mp4">
+        </video-->
+        <!--注释掉图片可换成视频版本-->
+        <img src="https://cn.bing.com//th?id=OHR.HuntsMesa_JA-JP3140979616_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" alt="">
+        <div class="bottom-cover" style="background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(244 248 251 / 0.6) 50%, rgb(244 248 251) 100%);"></div>
+    </div>
+    <!--topbar开始-->
+    <style>
+        .navbar-toggler svg {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .navbar-toggler .bi-list-nested {
+            display: none;
+        }
+        
+        .navbar-toggler.collapsed .bi-list-nested {
+            display: block;
+        }
+        
+        .navbar-toggler.collapsed .bi-x {
+            display: none;
+        }
+        
+        .navbar-toggler .bi-x {
+            display: block;
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="position: absolute; z-index: 10000;">
+        <a class="navbar-brand" href="/"><img src="logo.png" height="30" style=" margin-left: 0px;" alt=""></a>
+        <button class="navbar-toggler collapsed" style="border: none; outline: none;" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="bi bi-list-nested" fill="currentColor" id="list-nested">
+                <path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 015 11h10a.5.5 0 010 1H5a.5.5 0 01-.5-.5zm-2-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm-2-4A.5.5 0 011 3h10a.5.5 0 010 1H1a.5.5 0 01-.5-.5z"></path>
+            </svg><span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" id="x">
+                    <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"></path>
+                    <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"></path>
+                </svg><span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://blog.444.info" target="_blant">博客</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://660000.xyz/" target="_blant">相册</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.free163.tk/" target="_blant">古典</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.free163.com/" target="_blant">诗词</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.mp4.run/" target="_blant">音乐</a>
+                </li>
+                
+            </ul>
+            <style>
+                #he-plugin-simple {
+                    z-index: 1000;
+                }
+            </style>
+            <div id="he-plugin-simple"></div>
+            <script>
+                WIDGET = {
+                    CONFIG: {
+                        "modules": "01234",
+                        "background": 5,
+                        "tmpColor": "4A4A4A",
+                        "tmpSize": 14,
+                        "cityColor": "4A4A4A",
+                        "citySize": 14,
+                        "aqiSize": 14,
+                        "weatherIconSize": 22,
+                        "alertIconSize": 16,
+                        "padding": "8px 8px 8px 8px",
+                        "shadow": "1",
+                        "language": "auto",
+                        "borderRadius": 5,
+                        "fixed": "false",
+                        "vertical": "middle",
+                        "horizontal": "center",
+                        "key": "acd0fdcab4b9481a98d0f59145420fac"
+                    }
+                }
+            </script>
+            <script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
+        </div>
+    </nav>
+    <!--topbar结束-->
+    <div class="container" style="margin-top: 100px; position: relative; z-index: 100;">
+       
+        <ul class="mylist row">
+            <!------>
+            <li class="title"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-remen"></use>
+                </svg> 静态网站</li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://www.free163.com" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/听松阁.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>听松阁</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>      	
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://www.free163.tk" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/诗神.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>诗神</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://444.info/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/网址导航.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>网址导航</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://2345.ltd/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/电脑桌面.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>电脑桌面</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://666.vin/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/音乐导航.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>音乐导航</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://yyy.ink" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/音乐在线.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>音乐在线</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://odj.cc/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/手机音乐.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>手机音乐</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            
+            
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://odj.cc/m/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/手机音乐2.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>手机音乐2</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://kkkk.info/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/米表.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>米表</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://vip.2345.ltd/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/VIP视频.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>VIP视频</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.book.ga/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/武侠小说.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>武侠小说</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://pu.cx/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/企业邮局.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>企业邮局</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            
+            
+            
+        </ul>
+        
+        
+        <ul class="mylist row">
+            <!------>
+            <li class="title"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shipin"></use>
+                </svg> 动态网站</li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://blog.444.info/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/我的博客.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>我的博客</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>      	
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://660000.xyz/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/性感图片站.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>性感图片站</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>  
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://226633.xyz/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/清纯图片站.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>清纯图片站</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://pic.cloud.eu.org/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/免费图床.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>免费图床</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://dwz.64.gs/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/短网址.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>短网址</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://git.64.gs/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/Github下载加速.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>Github下载加速</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://movie.2345.ltd/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/电影下载.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>电影下载</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://book.2345.ltd/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/免费小说.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>免费小说</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://down.2345.ltd" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/软件下载.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>软件下载</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://free.444.info" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/免费空间.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>免费空间</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://game.444.info/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/在线小游戏.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>在线小游戏</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+        </ul>
+        
+        
+        
+        <ul class="mylist row">
+            <li class="title"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-gouwuche"></use>
+                </svg> 网盘直链</li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://kylehao.ys168.com/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/文件分享.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>文件分享</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://cloud.444.info/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/Onemanager.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>Onemanager</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://pan.asia.ga/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/Oneindex.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>Oneindex</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://gs.free163.com/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/Oneindex美化版.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>Oneindex美化版</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://gd.444.info/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/Goindex.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>Goindex</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://pan.64.gs/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/Sharelist.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>Sharelist</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://odcf.444.info/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/Odcf.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>Odcf</span></a></li>
+                    	
+                    	
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://disk.444.info/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/Onepoint.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>Onepoint</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://drive.444.info/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/Cloudreve.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>Cloudreve</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://alist.444.info/" target="_blank"><img name="music" src="https://cdn.jsdelivr.net/gh/kylehao/public@master/desktop_siteimg/阿里云alist.jpg" width="175" height="77" border="0" id="index_r11_c2" alt="" />
+                        <use xlink:href="#icon-tengxunshipin"></use>
+                    </svg><span>阿里云alist</span></a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+            
+        </ul>
+        
+        
+        
+        <!--
+        <ul class="mylist row">
+            <li class="title"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-youxiang"></use>
+                </svg>邮箱</li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-gmail"></use>
+                    </svg><span>Gmail</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://outlook.live.com/mail/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-windows"></use>
+                    </svg><span>Hotmail</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://mail.163.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wangyi"></use>
+                    </svg><span>网易邮箱</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://mail.sina.com.cn/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinlangwang"></use>
+                    </svg><span>新浪邮箱</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://mail.qq.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-QQ"></use>
+                    </svg><span>QQ邮箱</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://qiye.aliyun.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-yunyouxiang"></use>
+                    </svg><span>阿里邮箱</span></a></li>
+        </ul>
+        <ul class="mylist row">
+            <li class="title"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-ai-tool"></use>
+                </svg>其他云盘</li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://alist.444.info/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ai-tool"></use>
+                    </svg><span>阿里云</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="/ip/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wangluo"></use>
+                    </svg><span>IP查询</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://translate.google.cn/?hl=zh-CN" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-fanyi"></use>
+                    </svg><span>谷歌翻译</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://www.slimego.cn/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-shilaimu"></use>
+                    </svg><span>史莱姆</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://feedly.com" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-feedly"></use>
+                    </svg><span>Feedly</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://www.mdeditor.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-md"></use>
+                    </svg><span>MD编辑器</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://cubic-bezier.com" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-quxian"></use>
+                    </svg><span>贝赛尔曲线</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://5iux.cn/base64/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-base64"></use>
+                    </svg><span>Base64</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://javascriptobfuscator.com/Javascript-Obfuscator.aspx" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-jshunxiao"></use>
+                    </svg><span>JS混淆器</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://ping.pe" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wangluo1"></use>
+                    </svg><span>Ping.pe</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://ping.chinaz.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-pingup"></use>
+                    </svg><span>站长Ping</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://apkdl.in/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-anzhuo"></use>
+                    </svg><span>APK下载</span></a></li>
+        </ul>
+        <ul class="mylist row">
+            <li class="title"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-kongzhitai"></use>
+                </svg>开发</li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://www.w3school.com.cn/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-h5"></use>
+                    </svg><span>W3school</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://github.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg><span>Github</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://codepen.io/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-codepen"></use>
+                    </svg><span>Codepen</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.52pojie.cn/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-theater-masks"></use>
+                    </svg><span>吾爱破解</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://segmentfault.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-msg"></use>
+                    </svg><span>SF思否</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://cdnjs.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-cdnjs"></use>
+                    </svg><span>CdnJs</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://fontawesome.com/icons?d=gallery&m=free" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-font-awesome"></use>
+                    </svg><span>Font A.</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://msdn.itellyou.cn/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-windows"></use>
+                    </svg><span>MSDN下载</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://dash.cloudflare.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-cloudflare"></use>
+                    </svg><span>C. flare</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.swiper.com.cn/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-S"></use>
+                    </svg><span>Swiper</span></a></li>
+        </ul>
+        <ul class="mylist row">
+            <li class="title"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-sousuo"></use>
+                </svg>搜索引擎</li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.google.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-google"></use>
+                    </svg><span>Google</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https:/m.baidu.com/?pu=sz%401321_480&wpo=btmfast" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-icon_baidulogo"></use>
+                    </svg><span>百度</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://duckduckgo.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-duck"></use>
+                    </svg><span>DuckGo</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.bing.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-bing"></use>
+                    </svg><span>Bing</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.sogou.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-sougou"></use>
+                    </svg><span>搜狗</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.naver.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-icon-test"></use>
+                    </svg><span>NAVER</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://mijisou.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-miji"></use>
+                    </svg><span>秘迹</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.dogedoge.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-gougou"></use>
+                    </svg><span>多吉</span></a></li>
+        </ul>
+        
+        -->
+    </div>
+    <!--版权信息开始-->
+    <p class="mt-5 mb-3 text-muted text-center">©2020 by <a href="https://www.free163.com/">听松阁</a>. All rights reserved.</p>
+    <!--
+作者:D.Young
+主页：https://blog.5iux.cn/
+github：https://github.com/5iux/5iux.github.io
+日期：2021-02-04
+版权所有，请勿删除
+-->
+    <!--版权信息结束-->
+    <script>
+    eval(function(e, t, a, c, i, n) {
+        if (i = function(e) {
+                return (e < t ? "" : i(parseInt(e / t))) + (35 < (e %= t) ? String.fromCharCode(e + 29) : e.toString(36))
+            }, !"".replace(/^/, String)) {
+            for (; a--;) n[i(a)] = c[a] || i(a);
+            c = [function(e) {
+                return n[e]
+            }], i = function() {
+                return "\\w+"
+            }, a = 1
+        }
+        for (; a--;) c[a] && (e = e.replace(new RegExp("\\b" + i(a) + "\\b", "g"), c[a]));
+        return e
+    }('!2(){2 g(){h(),i(),j(),k()}2 h(){d.9=s()}2 i(){z a=4.8(\'A[B="7"][5="\'+p()+\'"]\');a&&(a.9=!0,l(a))}2 j(){v(u())}2 k(){w(t())}2 l(a){P(z b=0;b<e.O;b++)e[b].I.1c("s-M");a.F.F.F.I.V("s-M")}2 m(a,b){E.H.S("L"+a,b)}2 n(a){6 E.H.Y("L"+a)}2 o(a){f=a.3,v(u()),w(a.3.5),m("7",a.3.5),c.K(),l(a.3)}2 p(){z b=n("7");6 b||a[0].5}2 q(a){m("J",a.3.9?1:-1),x(a.3.9)}2 r(a){6 a.11(),""==c.5?(c.K(),!1):(w(t()+c.5),x(s()),s()?E.U(b.G,+T X):13.Z=b.G,10 0)}2 s(){z a=n("J");6 a?1==a:!0}2 t(){6 4.8(\'A[B="7"]:9\').5}2 u(){6 4.8(\'A[B="7"]:9\').W("14-N")}2 v(a){c.1e("N",a)}2 w(a){b.G=a}2 x(a){a?b.3="1a":b.16("3")}z y,a=4.R(\'A[B="7"]\'),b=4.8("#18-C-19"),c=4.8("#C-12"),d=4.8("#17-C-15"),e=4.R(".C-1b"),f=a[0];P(g(),y=0;y<a.O;y++)a[y].D("Q",o);d.D("Q",q),b.D("1d",r)}();', 62, 77, "||function|target|document|value|return|type|querySelector|checked||||||||||||||||||||||||||var|input|name|search|addEventListener|window|parentNode|action|localStorage|classList|newWindow|focus|superSearch|current|placeholder|length|for|change|querySelectorAll|setItem|new|open|add|getAttribute|Date|getItem|href|void|preventDefault|text|location|data|blank|removeAttribute|set|super|fm|_blank|group|remove|submit|setAttribute".split("|"), 0, {}));
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
 
-</script><script src="./images/jquery-1.9.0.min.js">
-</script><script src="./images/common.js"></script>
-<script src="./images/script.js"></script>
-	<script type="text/javascript" src="./images/jquery.bgswitcher.js"></script>
-	<script>
-	$("document").ready(function(){
-	$("header").bgswitcher({
-  	images: ["https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/main01.jpg","https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/main02.jpg","https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/main03.jpg"],
-  	effect: "fade",
-  	duration: 2000
-	});
-	});
-	</script>
-<script data-ad-client="ca-pub-8742386847853865" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<noscript></head></noscript>
-
-<body style="zoom: 1;" >
-
-<header style=" background-color:#ffffff; " >
-<div class="wh1"><img src="./images/bg_header_wh.png">
-	</div>
-
-<div id="head_inner" >
-	<a href="#" class="tel" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/btn_tel.png" alt="个人介绍"></a><br>
-	<a href="#" class="acs" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/btn_acs.png" alt="我的相册"></a><br>
-	<a href="#" class="store" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/btn_store.png" alt="我的博客"></a><br>
-	<h1><a href="../"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v1.0/images/logo.png" alt="听松阁" class="logo"></a></h1>
-	<nav id="globalnav" style="margin-top:390px;">
-		<ul>
-			<li class="nav01"><a href="./lx/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v3.0/images/btn1.jpg" alt="流行音乐"></a></li>
-			<li class="nav02"><a href="./qyy/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v3.0/images/btn2.jpg" alt="轻音乐"></a></li>
-			<li class="nav03"><a href="./dys/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v3.0/images/btn3.jpg" alt="德云社"></a></li>
-		        <li class="nav04"><a href="./gl/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v3.0/images/btn4.jpg" alt="郭论"></a></li>
-			<li class="nav05"><a href="./qd/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v3.0/images/btn5.jpg" alt="谦道"></a></li>
-			<li class="nav06"><a href="./bj/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/kylehao/44444.org.cn@v3.0/images/btn6.jpg" alt="百家讲坛"></a></li>
-		</ul>
-	</nav>
-</div>
-
-
-</header>
-
-</body></html>
+</html>
